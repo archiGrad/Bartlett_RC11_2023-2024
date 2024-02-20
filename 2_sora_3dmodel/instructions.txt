@@ -56,4 +56,5 @@ fase_3: reconstruct camera path in houdini
 2: generate directionvector
 3: fix pointsorting
 4: apply camera to new path
-5: 
+5: add geoemtry to scene
+6: render scene 
