@@ -44,7 +44,7 @@ while (cap.isOpened()):
 python extract_and_download.py
 
 fase_2: create 3d model from footage
-0: install realitycapture software for non commercial use
+0: install realitycapture software for non commercial use : https://we.tl/t-SJ8bFe1gEa
 1: input images
 2: align images
 3: reconstruct in normal detail
