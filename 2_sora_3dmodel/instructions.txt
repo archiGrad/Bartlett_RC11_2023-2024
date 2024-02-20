@@ -1,16 +1,12 @@
-
-
-downlkoad the corresponding files
+download the corresponding files
 git clone https://github.com/archiGrad/Bartlett_RC11_2023-2024
 
 fase_1: download and extract frames from youtube
 1: make a py environment
 python -m venv env
 2: activate environment
-linux: 
-source env/bin/activate
-windows (bash):
-env\Scripts\activate
+linux: source env/bin/activate
+windows (bash): env\Scripts\activate
 3: install opencv-python and pytube
 pip install pytube
 pip install opencv-python
@@ -21,7 +17,6 @@ from pytube import YouTube
 import cv2 
 import os
 
-
 imagepath = Path("./images")
 imagepath.mkdir(exist_ok=True)
 
@@ -31,9 +26,7 @@ yt = YouTube(url)
 video = yt.streams.get_by_itag(137)
 video.download()
 
-
 frame_no = 0
-
 
 cap = cv2.VideoCapture("Introducing Sora — OpenAI’s text-to-video model.mp4")
 while (cap.isOpened()):
@@ -57,9 +50,9 @@ fase_2: create 3d model from footage
 5: export with camera as part of the model
 
 fase_3: reconstruct camera path in houdini
-1:extract model and camer
+1: extract model and camer
 2: generate directionvector
 3: fix pointsorting
 4: apply camera to new path
-5: add geoemtry to scene
+5: add geomtry to scene
 6: render scene 
