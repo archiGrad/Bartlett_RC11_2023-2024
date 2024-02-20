@@ -1,0 +1,59 @@
+fase_1: download and extract frames from youtube
+1: make a py environment
+python -m venv env
+2: activate environment
+linux: 
+source env/bin/activate
+windows (bash):
+env\Scripts\activate
+3: install opencv-python and pytube
+pip install pytube
+pip install opencv-python
+4: write script
+
+from pathlib import Path
+from pytube import YouTube
+import cv2 
+import os
+
+
+imagepath = Path("./images")
+imagepath.mkdir(exist_ok=True)
+
+url ="https://www.youtube.com/watch?v=HK6y8DAPN_0"
+
+yt = YouTube(url)
+video = yt.streams.get_by_itag(137)
+video.download()
+
+
+frame_no = 0
+
+
+cap = cv2.VideoCapture("Introducing Sora — OpenAI’s text-to-video model.mp4")
+while (cap.isOpened()):
+	ret, frame = cap.read()
+	if(frame_no % 10 == 0):
+		name =  f"frame_{frame_no}.jpg"
+		target = os.path.join(imagepath,name)
+		cv2.imwrite(target, frame)
+	frame_no +=1		
+	
+
+5: execute script
+python extract_and_download.py
+
+fase_2: create 3d model from footage
+0: install realitycapture software for non commercial use
+1: input images
+2: align images
+3: reconstruct in normal detail
+4: generate a texturemap
+5: export with camera as part of the model
+
+fase_3: reconstruct camera path in houdini
+1:extract model and camer
+2: generate directionvector
+3: fix pointsorting
+4: apply camera to new path
+5: 
