@@ -1,3 +1,8 @@
+
+
+downlkoad the corresponding files
+git clone https://github.com/archiGrad/Bartlett_RC11_2023-2024
+
 fase_1: download and extract frames from youtube
 1: make a py environment
 python -m venv env
