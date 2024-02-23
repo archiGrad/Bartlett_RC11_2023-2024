@@ -107,12 +107,12 @@
 
 ### Example Images:
 
-1. ![AI Model 1](./ai_model_1.png)
-2. ![AI Model 2](./ai_model_2.png)
-3. ![AI Model 3](./ai_model_3.png)
-4. ![AI Model 4](./ai_model_4.png)
-5. ![AI Model 5](./ai_model_5.png)
-6. ![AI Model 6](./ai_model_6.png)
-7. ![AI Model 7](./ai_model_7.png)
-8. ![AI Model 8](./ai_model_8.png)
-9. ![AI Model 9](./ai_model_9.png)
+1. ![AI Model 1](./images/ai_model_1.png)
+2. ![AI Model 2](./images/ai_model_2.png)
+3. ![AI Model 3](./images/ai_model_3.png)
+4. ![AI Model 4](./images/ai_model_4.png)
+5. ![AI Model 5](./images/ai_model_5.png)
+6. ![AI Model 6](./images/ai_model_6.png)
+7. ![AI Model 7](./images/ai_model_7.png)
+8. ![AI Model 8](./images/ai_model_8.png)
+9. ![AI Model 9](./images/ai_model_9.png)
