@@ -1,2 +1,4 @@
 # Ignore dict.zip in the 5_dict_visualizer directory
-5_dict_visualizer/dict.zip
+5_dict_visualizer/content/dict/Datasets
+5_dict_visualizer/content/dict/pickle
+
