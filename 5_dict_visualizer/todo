@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ens result: walkthrough of a scene.
+
+	alternating videos playing on both ends with subtuitles
+
+	create a folder for every new scene, it contains z folder with image sequence, and also 3d models
+
+	everything is loaded in from a big json file
+
+
+
+
+
+
+	1 script that makes a json file from the folder
+
+	for every subtitle, find its corresponding time , and extract a image sequence fomr this
+
+
+	1: lets make a py dict:wq
+ mockup first, see if we can load it in hou
+
+
+	2: lets make a generator for that json scene from that pickle file
+
+
+
+
