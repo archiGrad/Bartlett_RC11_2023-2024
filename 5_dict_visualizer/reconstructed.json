@@ -1,94 +1,85 @@
 {
-  "items": [
+  "folder": [
     {
-      "paragraph": "subtitle_1",
-      "filmID": "movie_1.mp4",
-      "image_name": "image_1.png",
-      "model_path": "",
-      "image_amount": 10,
-      "time": 120,
-      "film_path": "path/to/film_1.mp4"
+      "paragraph": "iDistributed by\nNIPPON HERALD & OFFICE KITANO",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
+      "model_path": "model.obj",
+      "image_n": 25,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_2",
-      "filmID": "movie_2.mp4",
-      "image_name": "image_2.png",
+      "paragraph": "In the sands of Arrakis, the fate of civilizations will be decided.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 25,
-      "time": 130,
-      "film_path": "path/to/film_2.mp4"
+      "image_n": 15,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_3",
-      "filmID": "movie_3.mp4",
-      "image_name": "image_3.png",
+      "paragraph": "A struggle for power and survival unfolds amidst the dunes.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 15,
-      "time": 110,
-      "film_path": "path/to/film_3.mp4"
+      "image_n": 30,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_4",
-      "filmID": "movie_4.mp4",
-      "image_name": "image_4.png",
+      "paragraph": "The mysterious spice Melange holds the key to control and prosperity.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 20,
-      "time": 125,
-      "film_path": "path/to/film_4.mp4"
+      "image_n": 20,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_5",
-      "filmID": "movie_5.mp4",
-      "image_name": "image_5.png",
+      "paragraph": "Courage and treachery entwine in the shifting sands of Arrakis.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 30,
-      "time": 115,
-      "film_path": "path/to/film_5.mp4"
+      "image_n": 35,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_6",
-      "filmID": "movie_6.mp4",
-      "image_name": "image_6.png",
+      "paragraph": "Destiny unfolds beneath the relentless suns of Arrakis.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 40,
-      "time": 135,
-      "film_path": "path/to/film_6.mp4"
+      "image_n": 10,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_7",
-      "filmID": "movie_7.mp4",
-      "image_name": "image_7.png",
+      "paragraph": "Betrayal and redemption echo across the vast expanse of desert.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 20,
-      "time": 140,
-      "film_path": "path/to/film_7.mp4"
+      "image_n": 40,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_8",
-      "filmID": "movie_8.mp4",
-      "image_name": "image_8.png",
+      "paragraph": "The legacy of Arrakis is written in blood and sand.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 10,
-      "time": 130,
-      "film_path": "path/to/film_8.mp4"
+      "image_n": 25,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     },
     {
-      "paragraph": "subtitle_9",
-      "filmID": "movie_9.mp4",
-      "image_name": "image_9.png",
+      "paragraph": "In the vastness of Arrakis, secrets are buried deep beneath the surface.",
+      "filmID": "Dune.mp4",
+      "image_name": "frame",
       "model_path": "",
-      "image_amount": 45,
-      "time": 120,
-      "film_path": "path/to/film_9.mp4"
-    },
-    {
-      "paragraph": "subtitle_10",
-      "filmID": "movie_10.mp4",
-      "image_name": "image_10.png",
-      "model_path": "",
-      "image_amount": 50,
-      "time": 125,
-      "film_path": "path/to/film_10.mp4"
+      "image_n": 30,
+      "time": 100,
+      "film_path": "Dune Part Two  Official Trailer 3.mp4"
     }
   ]
 }
