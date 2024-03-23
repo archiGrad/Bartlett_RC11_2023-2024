@@ -1,18 +1,17 @@
 \input{sections/header/header.tex}
 
-\font\myfont=phvr8r at 45pt
-\title{{\myfont workshop Assigment}}
+\title{\textbf{\huge workshop Assigment}}
 \author{Joris Putteneers}
 \date{}
 
 \pagestyle{mypagestyle}
 
 \begin{document}
+
 \maketitle
 
 \input{sections/assignment_1/assignment_1.tex}
-\chapter{Assignment 1}
-\input{sections/assignment_1/assignment_1.tex}
+%\input{sections/assignment_2/assignment_2.tex}
 %\input{sections/assignment_3/assignment_3.tex}
 
 \end{document}

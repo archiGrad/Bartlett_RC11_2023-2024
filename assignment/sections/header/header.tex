@@ -1,5 +1,5 @@
-\documentclass[twoside]{article}
-\usepackage[9pt]{extsizes}
+\documentclass[11pt, a4paper, twoside]{article}
+
 \usepackage{graphicx}
 \usepackage{geometry} % Adjust left margin to 4cm and right margin to 1cm
 \usepackage{url} % Required for \url{}
@@ -15,21 +15,28 @@
 \usepackage{changepage} % for the adjustwidth environment
 \usepackage{fancyhdr}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage{wrapfig} % for wrapping figures
+\usepackage{caption}
+\usepackage{calc} % Load the calc package
+\usepackage{varwidth} % Required for \begin{varwidth}
+\usepackage{changepage} % Required for \adjustwidth command
+\usepackage{multicol} % For multi-column l
 
 
 
-\providecommand{\keywords}[1]{%
-    \noindent
-    \begin{adjustwidth}{50pt}{50pt} % Left and right margins
-        #1
-    \end{adjustwidth}
-}
+
+\renewcommand{\thesubfigure}{Fig. \arabic{subfigure}} % Redefine the subfigure label format
+\renewcommand{\thesubfigure}{\textbf{Fig \arabic{subfigure}}}
+
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+
 
 % Define geometry settings for even (left) pages
 \geometry{
     left=1cm,
     right=5cm,
-    top=2cm,
+    top=0cm,
     bottom=2cm,
     includehead,
     includefoot,
@@ -39,12 +46,20 @@
 \newgeometry{
     right=1cm,
     left=5cm,
-    top=2cm,
+    top=0cm,
     bottom=2cm,
     includehead,
     includefoot,
 }
 
+\providecommand{\keywords}[4]{%
+    \noindent
+    \begin{adjustwidth}{#2}{#3} % Left and right margins
+        {\fontfamily{phv}\selectfont\footnotesize % Selecting Helvetica font family and 9pt size
+        #4} % Content of keywords
+        \vspace{#1\baselineskip} % Adjust bottom margin
+    \end{adjustwidth}
+}
 
 % Define page style
 \fancypagestyle{mypagestyle}{
@@ -58,13 +73,25 @@
 
 
 % Define a custom format for section titles
-\titleformat{\section}
-  {\normalfont\Large\bfseries\centering} % Format for title
-  {}% Label (no label here)
-  {0pt} % Separation between label and title body
-  {}
+%\titleformat{\section}
+%  {\normalfont\Large\bfseries\centering} % Format for title
+%  {}% Label (no label here)
+%  {0pt} % Separation between label and title body
+%  {}
 
 
-
-
-
+%\newcommand{\setImage}[2]{%
+%    \begin{wrapfigure}{l}{0.3\textwidth} % Wrap figure on the left with 30% of the text width
+%        \centering
+%        \ifodd\value{page} % Check if the page is odd
+%            \begin{adjustwidth}{-4cm}{0pt} % Adjust right margin for odd pages
+%                \includegraphics[width=0.9\linewidth]{#1} % Adjust width as needed
+%            \end{adjustwidth}
+%        \else
+%            \begin{adjustwidth}{0pt}{-4cm} % Adjust left margin for even pages
+%                \includegraphics[width=0.9\linewidth]{#1} % Adjust width as needed
+%            \end{adjustwidth}
+%        \fi
+%        \caption{#2}
+%    \end{wrapfigure}
+%}
