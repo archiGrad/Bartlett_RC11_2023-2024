@@ -14,10 +14,7 @@
 \usepackage{helvet}
 \usepackage{changepage} % for the adjustwidth environment
 \usepackage{fancyhdr}
-
 \renewcommand{\familydefault}{\sfdefault}
-
-
 
 
 
@@ -27,7 +24,6 @@
         #1
     \end{adjustwidth}
 }
-
 
 % Define geometry settings for even (left) pages
 \geometry{
@@ -50,16 +46,14 @@
 }
 
 
-
-
-%pagenumbers
 % Define page style
 \fancypagestyle{mypagestyle}{
-    \fancyhf{} % Clear header and footer
-    \fancyfoot[LE]{\thepage\hspace{1em}\leftmark} % Right side on odd pages, left side on even pages
-    \fancyfoot[RO]{\rightmark\hspace{1em}\thepage} % Left side on even pages, right side on odd pages
-    \renewcommand{\footrulewidth}{0pt} % Remove footer rule
+    \fancyhf{} % clear header and footer
+    \renewcommand{\footrulewidth}{0pt} % remove footer rule
     \renewcommand{\headrulewidth}{0pt} % Remove header rule
+	
+	\fancyfoot[RO]{\nouppercase{\rightmark\thepage}}
+	\fancyfoot[LE]{\nouppercase{\thepage\leftmark}}
 }
 
 
@@ -68,4 +62,9 @@
   {\normalfont\Large\bfseries\centering} % Format for title
   {}% Label (no label here)
   {0pt} % Separation between label and title body
-  {\capitalisewords}% Before-code (capitalize each word)
+  {}
+
+
+
+
+
