@@ -73,25 +73,9 @@
 
 
 % Define a custom format for section titles
-%\titleformat{\section}
-%  {\normalfont\Large\bfseries\centering} % Format for title
-%  {}% Label (no label here)
-%  {0pt} % Separation between label and title body
-%  {}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\centering} % Format for title
+  {}% Label (no label here)
+  {0pt} % Separation between label and title body
+  {}
 
-
-%\newcommand{\setImage}[2]{%
-%    \begin{wrapfigure}{l}{0.3\textwidth} % Wrap figure on the left with 30% of the text width
-%        \centering
-%        \ifodd\value{page} % Check if the page is odd
-%            \begin{adjustwidth}{-4cm}{0pt} % Adjust right margin for odd pages
-%                \includegraphics[width=0.9\linewidth]{#1} % Adjust width as needed
-%            \end{adjustwidth}
-%        \else
-%            \begin{adjustwidth}{0pt}{-4cm} % Adjust left margin for even pages
-%                \includegraphics[width=0.9\linewidth]{#1} % Adjust width as needed
-%            \end{adjustwidth}
-%        \fi
-%        \caption{#2}
-%    \end{wrapfigure}
-%}
