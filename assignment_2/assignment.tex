@@ -1,7 +1,8 @@
-\documentclass[11pt, a4paper, twoside]{article}
+\documentclass[11pt, a4paper]{article}
 
 \usepackage{graphicx}
-\usepackage{geometry} % Adjust left margin to 4cm and right margin to 1cm
+\usepackage[margin=2cm,top=2cm,bottom=2cm]{geometry} % Adjust margins
+
 \usepackage{url} % Required for \url{}
 \usepackage{xcolor} % Required for specifying colors by name
 \usepackage{subcaption}
@@ -20,190 +21,203 @@
 
 
 \begin{document}
-\title{RC11 Workshops}
+\title{Bartlett RC11 2023-2024}
 \author{Joris Putteneers}
 \date{}
 \maketitle
 % first assignment
 
-	\section*{houdini fundamentals}
+\section {Houdini Fundamentals}
 
-This session coveres the houdini fundamentals. For the exercice, the
-following is expected.
+This session covers the Houdini fundamentals. For the exercise, the following is expected:
 
-	\begin{itemize}
-		\item 
+\begin{itemize}
+	\item Alter 2 of the example setups we covered during class. This means, add/remove a minimum of 2 nodes to a setup. Changing the parameters is not enough. Adding a Null SOP or adding unconnected nodes does not count.
+	\item Describe in detail what exactly your setup is doing. Some important keywords and terminology are \textit{node, parameter, procedural, datatype, attribute, class, geometry, point, primitive, vertex, etc.}. Obviously, the example below cannot be used.
+\end{itemize}
 
-Alter 2 of the example setups we covered during class.
-This means, add / remove minimim 2 nodes to a setup. Changing the parameters is
-not enough. Adding a Null sop or adding unconnected nodes does not count.
+An example of such a description could be:
 
-	 	\item 
-describe in the most detail what exactly your setup is doing. some important
-keywords and terminology are  \textit{ node, parameter,
-procedural, datatype, attribute, class, geometry, point, primitive, vertex,..}. Obviously, the example below cannot be used.
- 
-	\end{itemize}	
-	An example of such a description would be :
+% Overview image
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{media/houdini_fundamentals_overview.png}
+	\caption{Houdini Fundamentals: Setup 1 Overview}
+	\label{fig:assignment1}
+\end{figure}
 
-	% overview image
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\textwidth]{media/houdini_fundamentals_overview.png}
-		\caption{houdini fundamentals: setup 1 overview}
-		\label{fig:assignment1}
-	\end{figure}
+\begin{minipage}[H!]{0.4\textwidth}
+	\textbf{1: Sphere SOP} \newline 
 
-	%begin first image
-	\begin{minipage}[H!]{0.4\textwidth}
-		\textbf{1: sphere SOP} \newline 
+ The "sphere" is of primitive type: polygon. One of the basic geometric data
+types that contains points, primitives of type polygon, and vertices.  
 
-A sphere is created. the sphere is
-of primitive type: polygon. Once of the basic datatypes that contains: points,
-primitives of type: polygon, and vertecis.  
-
-	\end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_1.png}
-	\end{minipage}
+\end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_1.png}
+\end{minipage}
 
 
 
-	\begin{minipage}[H]{0.4\textwidth}
-		\textbf{2: atribute wrangle SOP}\newline 
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{2: Attribute Wrangle SOP}\newline 
 
-We create a attribute wrangle sop, where we make a "weight" attribute. the
-attribute is of type float as described by the "f@" declaration. the attribute
-is set to run over primitives, this is because later in the node setup, we will
-use a polyextrude node where we will need a primitive attribute to drive the
-extrusion value. The value is set to 0. (which will be interpreted as 0.0
+We create an "Attribute Wrangle" SOP, where we make a "weight" attribute. The
+attribute is of type float as described by the "f@" declaration. The attribute
+is set to run over primitives. This is because later in the node setup, we will
+use a PolyExtrude node where we will need a primitive attribute to drive the
+extrusion value. The value is set to 0 (which will be interpreted as 0.0
 because of the float declaration) because later, we can interpolate between 0
 and 1. 
 	
-	 \end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_2.png}
-	\end{minipage}
+ \end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_2.png}
+\end{minipage}
 
 
-	\vspace{10pt}
+\vspace{10pt}
 
-	\begin{minipage}[H]{0.4\textwidth}
-		\textbf{3: transform SOP}\newline 
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{3: Transform SOP}\newline 
 
-Then, i layed down a "transform" sop, This will be the attractor,it is just a
-duplicate of the original sphere. the distance between this duplicate
+Then, we lay down a "Transform" SOP. This will be the attractor; it is just a
+duplicate of the original sphere. The distance between this duplicate
 (attractor) and the original sphere will dictate the final extrusion value. 
 	
-	\end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_3.png}
-	\end{minipage}
+\end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_3.png}
+\end{minipage}
 
 
-	\begin{minipage}[H]{0.4\textwidth}
-		\textbf{4: attribute transfer SOP}\newline 
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{4: Attribute Transfer SOP}\newline 
 
-the attribute transfer sop uses the "weight" primitive attribute to write out
-the distance value between the original sphere and the attrcator. by setting the
-originla 'weight' attributes as float, we can have value interpolations between
-0 and 1. if we had set the weigt attributes to integers, we sould not
-interpolate. the output values  would be binary (0 or 1). 
+The "Attribute Transfer" SOP uses the "weight" primitive attribute to write out
+the distance value between the original sphere and the attractor. By setting
+the original 'weight' attribute as float, we can have value interpolations
+between 0 and 1. If we had set the weight attributes to integers, we could not
+interpolate; the output values would be binary (0 or 1). 
  
-	\end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_4.png}
-	\end{minipage}
+\end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_4.png}
+\end{minipage}
 
 
-	\begin{minipage}[H]{0.4\textwidth}
-		\textbf{5: attribute wrangle SOP}\newline 
-the same as the previous wrangle SOP, only with the opposite value.The reason
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{5: Attribute Wrangle SOP}\newline 
+The same as the previous Wrangle SOP, only with the opposite value. The reason
 we interpolate between 0 and 1 is because it is easier to work with normalized
-values that arbitrary values. 
+values than arbitrary values. 
 	
-	\end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_5.png}
-	\end{minipage}
+\end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_5.png}
+\end{minipage}
 
 
-	\begin{minipage}[H]{0.4\textwidth}
-		\textbf{6: polyextrude SOP}\newline 
-the same as the previous wrangle SOP, only with the opposite value.The reason
-we interpolate between 0 and 1 is because it is easier to work with normalized
-values that arbitrary values. 
-	
-	\end{minipage}
-	\vspace{1pt}
-	\begin{minipage}[H]{0.6\textwidth}
-		\includegraphics[width=1\textwidth]{media/houdini_fundamentals_6.png}
-	\end{minipage}
-
-
-
-	\newpage
-	\section*{2.Visualizing gps and image metadata}
-	
-This session coveres how to overlay your google maps trajectories with images in houdini. For the assignment, the
-following is expected.
-
-	\begin{itemize}
-		\item load in your own images and gps data, 
-		\item generate a series of images depicting your travels.
-	\end{itemize}	
-	An example of such a description would be :
-
-	\begin{figure}[H]
-		\includegraphics[width=\textwidth]{media/mapping_bkk.png}
-	\end{figure}
-
-	\begin{figure}[H]
-		\includegraphics[width=\textwidth]{media/mapping_bkk2.png}
-	\end{figure}
-
-
-	\newpage
-	\section*{Sora to 3d model}
-
-In this workshop, we covered how to generate a 3d model from a video of
-a subject.In this case, this was the Sora AI video published from openAI. For the assignment, the
-following is expected.
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{6: color SOP}\newline 
+A visualisation of the "weight" primitive attribute according to the "viridis"
+colorscheme. Because we normalized our values between 0 and 1, it is more stable
+if we would ever change distances, or geometry inputs.
+\end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_6.png}
+\end{minipage}
 
 
 
-	\begin{itemize}
-		\item Generate one or more photogrammetry model from a video/livestream/webscraped/google images/youtube. Take footage related to your projects.
-		\item reconstruct your camera path.
-		\item fond a way of adding information to the subject, an additional 3d model, ) (volume specualtion, curavature, segenmbntation, adding you are sharing your entire screen sr, sharing — 	
-		\item Visualize your model as a collection of images/renders.
-	\end{itemize}
-
-
-	\begin{figure}[h]
-		  \centering
-		  \includegraphics[width=\textwidth]{media/sora.png}
-	\end{figure}
+\begin{minipage}[H]{0.4\textwidth}
+	\textbf{6: PolyExtrude SOP}\newline 
+Using the "weight" value in d"distance scale", we use the weight value as a
+multiplier of the extrusion value. If we set the distance value to 0, the
+extrusion is 0 (0 x weight). If we set the distance value to 1, we get the full
+weight value as extrusion (1 x weight) \end{minipage}
+\vspace{1pt}
+\begin{minipage}[H]{0.6\textwidth}
+	\includegraphics[width=1\textwidth]{media/houdini_fundamentals_7.png}
+\end{minipage}
 
 
 
-	\newpage
-	\section*{visualizing json in houdini}
+\newpage
+\section {Visualizing GPS and Image Metadata}
 
-In this workshop, we covered how to  generate a json file that can be read and processed in
-houdini. This is usefull if you are constructing a .pickle or .json file  and want to know how this can be visualized in Houdini
+This session covers how to overlay your Google Maps trajectories with images in
+Houdini. For the assignment, the following is expected:
 
-	\begin{itemize}
-		\item based on your project/and other workshops,visualize a json file. This can take many forms. It is up to you how to shocase this in the best way.
-	\end{itemize}
+\begin{itemize}
+	\item Load in your own images and GPS data. 
+	\item Generate a series of images depicting your travels.
+	\item A short description of the procedure. 
+\end{itemize}
 
-	\begin{figure}[h]
-		\includegraphics[width=\textwidth]{media/json_visualizer.png}
-	\end{figure}
+An example of such a description would be :
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{media/mapping_bkk.png}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{media/mapping_bkk2.png}
+\end{figure}
+
+
+\newpage
+\section {video to 3D Model}
+
+In this workshop, we covered how to generate a 3D model from a video of a
+subject. In this case, this was the Sora AI video published from OpenAI. For
+the assignment, the following is expected.
+
+\begin{itemize}
+	\item Generate one or more photogrammetry models from a
+video/livestream/webscraped/Google Images/YouTube. Take footage related to your
+projects.  
+\item Reconstruct your camera path.
+\item Find a way of adding information to the subject.
+(Volume speculation, curvature, segmentation, etc.)
+ \item Visualize your
+model as a collection of images/renders.
+
+	\item A short description of the procedure. 
+\end{itemize}
+
+
+\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=\textwidth]{media/sora.png}
+\end{figure}
+
+
+
+\newpage
+\section {Visualizing JSON in Houdini}
+
+In this workshop, we covered how to generate a JSON file that can be read and
+processed in Houdini. This is useful if you are constructing a .pickle or JSON
+file and want to know how this can be visualized in Houdini. The following is
+expected for the assignment.
+
+\begin{itemize}
+	\item
+Based on your project and other workshops, visualize and produce a JSON file.
+This can take many forms. It is up to you how to showcase this in the best way.
+Please also include a snippet of your JSON file.  \end{itemize}
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{media/json_visualizer.png}
+\end{figure}
+
+
 
 \end{document}

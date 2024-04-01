@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  1 APR 2024 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  1 APR 2024 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,31 +384,31 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \mc@col@check@num=\count293
 )
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-2.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (./assignment.aux)
 \openout1 = `assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -439,21 +439,21 @@ e
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=-0.56833pt
-* \evensidemargin=35.28255pt
-* \topmargin=-7.86334pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=103.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -461,8 +461,8 @@ e
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -473,7 +473,7 @@ Package caption Info: changepage package is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -485,49 +485,49 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count300
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./assignment.out) (./assignment.out)
 \@outlinefile=\write3
 \openout3 = `assignment.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <12> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <6> on input line 29.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
-6.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 44.
-<media/houdini_fundamentals_overview.png, id=4, 1927.2pt x 1084.05pt>
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 36.
+<media/houdini_fundamentals_overview.png, id=20, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_overview.png Graphic file (type png)
 <use media/houdini_fundamentals_overview.png>
 Package pdftex.def Info: media/houdini_fundamentals_overview.png  used on input
- line 52.
-(pdftex.def)             Requested size: 418.25368pt x 235.26619pt.
+ line 44.
+(pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 65.
-<media/houdini_fundamentals_1.png, id=5, 1927.2pt x 1084.05pt>
+(Font)              <10.95> on input line 55.
+<media/houdini_fundamentals_1.png, id=21, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_1.png Graphic file (type png)
 <use media/houdini_fundamentals_1.png>
-Package pdftex.def Info: media/houdini_fundamentals_1.png  used on input line 6
+Package pdftex.def Info: media/houdini_fundamentals_1.png  used on input line 5
 8.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 58--70
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 49--60
 []$[]$ $[]$ 
  []
 
@@ -535,137 +535,139 @@ Overfull \hbox (19.32138pt too wide) in paragraph at lines 58--70
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./media/houdini_fundamenta
 ls_overview.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-
-Underfull \hbox (badness 1867) in paragraph at lines 76--83
-\OT1/phv/m/n/10.95 where we make a "weight" at-
- []
-
-<media/houdini_fundamentals_2.png, id=15, 1927.2pt x 1084.05pt>
+<media/houdini_fundamentals_2.png, id=31, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_2.png Graphic file (type png)
 <use media/houdini_fundamentals_2.png>
-Package pdftex.def Info: media/houdini_fundamentals_2.png  used on input line 8
+Package pdftex.def Info: media/houdini_fundamentals_2.png  used on input line 7
 7.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 73--89
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 63--79
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-<media/houdini_fundamentals_3.png, id=16, 1927.2pt x 1084.05pt>
+<media/houdini_fundamentals_3.png, id=32, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_3.png Graphic file (type png)
 <use media/houdini_fundamentals_3.png>
-Package pdftex.def Info: media/houdini_fundamentals_3.png  used on input line 1
-03.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+Package pdftex.def Info: media/houdini_fundamentals_3.png  used on input line 9
+3.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 93--105
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 83--95
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-<media/houdini_fundamentals_4.png, id=17, 1927.2pt x 1084.05pt>
+<media/houdini_fundamentals_4.png, id=33, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_4.png Graphic file (type png)
 <use media/houdini_fundamentals_4.png>
 Package pdftex.def Info: media/houdini_fundamentals_4.png  used on input line 1
-19.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+09.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 107--121
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 97--111
 []$[]$ $[]$ 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./media/houdini_fundamentals_1.png> <./media/houdini_fundamentals_2.png> <
-./media/houdini_fundamentals_3.png>]
-<media/houdini_fundamentals_5.png, id=22, 1927.2pt x 1084.05pt>
+<media/houdini_fundamentals_5.png, id=34, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_5.png Graphic file (type png)
 <use media/houdini_fundamentals_5.png>
 Package pdftex.def Info: media/houdini_fundamentals_5.png  used on input line 1
-32.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+22.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 123--134
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 113--124
 []$[]$ $[]$ 
  []
 
-<media/houdini_fundamentals_6.png, id=23, 1927.2pt x 1084.05pt>
+[2 <./media/houdini_fundamentals_1.png> <./media/houdini_fundamentals_2.png> <.
+/media/houdini_fundamentals_3.png> <./media/houdini_fundamentals_4.png>]
+<media/houdini_fundamentals_6.png, id=39, 1927.2pt x 1084.05pt>
 File: media/houdini_fundamentals_6.png Graphic file (type png)
 <use media/houdini_fundamentals_6.png>
 Package pdftex.def Info: media/houdini_fundamentals_6.png  used on input line 1
-45.
-(pdftex.def)             Requested size: 250.95476pt x 141.14648pt.
+34.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Overfull \hbox (19.32138pt too wide) in paragraph at lines 136--147
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 126--136
 []$[]$ $[]$ 
  []
 
-[3 <./media/houdini_fundamentals_4.png> <./media/houdini_fundamentals_5.png> <.
-/media/houdini_fundamentals_6.png>]
-<media/mapping_bkk.png, id=28, 1927.2pt x 1084.05pt>
-File: media/mapping_bkk.png Graphic file (type png)
-<use media/mapping_bkk.png>
-Package pdftex.def Info: media/mapping_bkk.png  used on input line 163.
-(pdftex.def)             Requested size: 418.25368pt x 235.26619pt.
-<media/mapping_bkk2.png, id=29, 1927.2pt x 1084.05pt>
-File: media/mapping_bkk2.png Graphic file (type png)
-<use media/mapping_bkk2.png>
-Package pdftex.def Info: media/mapping_bkk2.png  used on input line 167.
-(pdftex.def)             Requested size: 418.25368pt x 235.26619pt.
+<media/houdini_fundamentals_7.png, id=40, 1927.2pt x 1084.05pt>
+File: media/houdini_fundamentals_7.png Graphic file (type png)
+<use media/houdini_fundamentals_7.png>
+Package pdftex.def Info: media/houdini_fundamentals_7.png  used on input line 1
+47.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./media/mapping_bkk.png>] [5 <./media/mapping_bkk2.png>]
-Overfull \hbox (40.40385pt too wide) in paragraph at lines 181--182
-[]\OT1/phv/m/n/10.95 Generate one or more pho-togram-me-try model from a video/
-livestream/webscraped/google
+Overfull \hbox (19.32138pt too wide) in paragraph at lines 139--149
+[]$[]$ $[]$ 
  []
 
-<media/sora.png, id=40, 1915.155pt x 973.6375pt>
+[3 <./media/houdini_fundamentals_5.png> <./media/houdini_fundamentals_6.png> <.
+/media/houdini_fundamentals_7.png>]
+<media/mapping_bkk.png, id=45, 1927.2pt x 1084.05pt>
+File: media/mapping_bkk.png Graphic file (type png)
+<use media/mapping_bkk.png>
+Package pdftex.def Info: media/mapping_bkk.png  used on input line 167.
+(pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
+<media/mapping_bkk2.png, id=46, 1927.2pt x 1084.05pt>
+File: media/mapping_bkk2.png Graphic file (type png)
+<use media/mapping_bkk2.png>
+Package pdftex.def Info: media/mapping_bkk2.png  used on input line 171.
+(pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
+ [4 <./media/mapping_bkk.png> <./media/mapping_bkk2.png>]
+<media/sora.png, id=53, 1915.155pt x 973.6375pt>
 File: media/sora.png Graphic file (type png)
 <use media/sora.png>
-Package pdftex.def Info: media/sora.png  used on input line 190.
-(pdftex.def)             Requested size: 418.25368pt x 212.62611pt.
-[6 <./media/sora.png>]
-<media/json_visualizer.png, id=48, 1927.2pt x 1084.05pt>
+Package pdftex.def Info: media/sora.png  used on input line 198.
+(pdftex.def)             Requested size: 483.69687pt x 245.90466pt.
+ [5 <./media/sora.png>]
+<media/json_visualizer.png, id=61, 1927.2pt x 1084.05pt>
 File: media/json_visualizer.png Graphic file (type png)
 <use media/json_visualizer.png>
-Package pdftex.def Info: media/json_visualizer.png  used on input line 210.
-(pdftex.def)             Requested size: 418.25368pt x 235.26619pt.
- [7 <./media/json_visualizer.png>] (./assignment.aux)
-Package rerunfilecheck Info: File `assignment.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package pdftex.def Info: media/json_visualizer.png  used on input line 218.
+(pdftex.def)             Requested size: 483.69687pt x 272.07048pt.
+ [6 <./media/json_visualizer.png>]
+(./assignment.aux)
+
+Package rerunfilecheck Warning: File `assignment.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `assignment.out':
+(rerunfilecheck)             Before: 13BF2BBA987078364B76A10E2134CC8E;690
+(rerunfilecheck)             After:  B812A929F05A0700C867AC994E418990;695.
  ) 
 Here is how much of TeX's memory you used:
- 12224 strings out of 478287
- 200750 string characters out of 5849289
- 586318 words of memory out of 5000000
- 30239 multiletter control sequences out of 15000+600000
+ 12244 strings out of 478287
+ 201131 string characters out of 5849289
+ 587341 words of memory out of 5000000
+ 30255 multiletter control sequences out of 15000+600000
  484262 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,77p,305b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,77p,312b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvro8a.pfb>
-Output written on assignment.pdf (7 pages, 9580979 bytes).
+Output written on assignment.pdf (6 pages, 10059612 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
